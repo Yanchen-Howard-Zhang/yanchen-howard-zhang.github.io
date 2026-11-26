@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yanchen Zhang — East Asian Studies &amp; Game Studies</title>
+  <meta
+    name="description"
+    content="Academic website of Yanchen Zhang (张晏晨), PhD Candidate in East Asian Studies at the University of Arizona and Director of International Relations at the Learning Games Initiative Research Archive (LGIRA)."
+  />
+  <meta name="author" content="Yanchen Zhang" />
+
+  <!--
+    ============================================================================
+    DEPLOYMENT CHECKLIST (Case-Sensitive Filenames for GitHub Pages)
+    ============================================================================
+    Deploy target: https://yanchen-howard-zhang.github.io/
+    Place index.html at your repository root alongside an assets/ directory
+    containing these 7 files with exact casing:
+
+      /index.html
+      /assets/
+        1. portrait.webp                                     (3:4 headshot)
+        2. CV_Yanchen_Zhang.pdf                              (Privacy-safe public CV)
+        3. Syllabus_Chinese_Popular_Culture_Video_Games.pdf  (15-week sample syllabus)
+        4. subor_sb486d.webp                                 (Plate 1 · Subor SB-486D, LGIRA)
+        5. greendam_cdrom.webp                               (Plate 2 · Green Dam CD-ROM, LGIRA)
+        6. gmc_living_room.webp                              (Plate 3 · 1990s living room, Shanghai)
+        7. gmc_computer_mall.webp                            (Plate 4 · Computer mall counter, Shanghai)
+
+    Tip: Resize photographs to ~1600px on the long edge (900px for portrait)
+    and compress WebP assets to ~150-350 KB for crisp, fast worldwide loading.
+    ============================================================================
+  -->
+
+  <!-- Inline SVG Favicon: "YZ" Georgia Serif Monogram (#FAF8F5) on Deep Navy (#14284B) -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2314284B'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-size='28' font-weight='500' letter-spacing='1' fill='%23FAF8F5'%3EYZ%3C/text%3E%3C/svg%3E"
+  />
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yanchen Zhang — East Asian Studies &amp; Game Studies" />
+  <meta
+    property="og:description"
+    content="PhD Candidate in East Asian Studies at the University of Arizona and Director of International Relations at LGIRA. Research on Chinese video game history, media archaeology, ludophobia, and platform governance."
+  />
+  <meta property="og:image" content="assets/portrait.webp" />
+
+  <!-- Twitter / X Card Metadata -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Yanchen Zhang — East Asian Studies &amp; Game Studies" />
+  <meta
+    name="twitter:description"
+    content="PhD Candidate in East Asian Studies at the University of Arizona. Research on Chinese video game history, ludophobia, media archaeology, and platform governance."
+  />
+  <meta name="twitter:image" content="assets/portrait.webp" />
+
+  <!-- Editorial Typography: Newsreader (Serif Display) & Inter (Crisp Sans Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Scheme 1 (Classic Academy: Deep Navy & Matte Terracotta) + Scheme C (Alternating Color Bands) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#14284B',
+            navyDark: '#0D1C36',
+            navyTint: '#E8EDF4',
+            terracotta: '#9E2A2B',
+            terracottaTint: '#F8ECEB',
+            bandLight: '#FAF8F5',
+            bandAlt: '#ECE7DC',
+            cardLight: '#FCFBF8',
+            warmCard: '#F4F0E7',
+            plateStage: '#EFECE6',
+            hairline: '#DDD6C8',
+            ink: '#1C232B',
+            muted: '#55606C',
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'Georgia', 'Cambria', 'Times New Roman', 'serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-bandLight text-ink font-sans antialiased selection:bg-navyTint selection:text-navy overflow-x-hidden">
+  <!-- Skip Link for Keyboard Accessibility -->
+  <a
+    href="#about"
+    class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-navy focus:px-4 focus:py-2 text-sm font-medium text-white shadow-md"
+  >
+    Skip to main content
+  </a>
+
+  <!-- ==========================================================================
+       0. STICKY DEEP NAVY HEADER
+       ========================================================================== -->
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-navy/95 text-white backdrop-blur-sm">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-4 sm:px-8">
+      <!-- Brand Name -->
+      <a
+        href="#about"
+        class="font-serif text-xl font-medium tracking-tight text-white transition-colors hover:text-[#F2D5D5]"
+      >
+        Yanchen Zhang
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-7 text-sm">
+        <a href="#about" data-nav="about" class="nav-link border-b-2 border-[#D96B6B] py-1 font-medium text-white transition-colors hover:text-white">About</a>
+        <a href="#research" data-nav="research" class="nav-link border-b-2 border-transparent py-1 text-white/75 transition-colors hover:text-white">Research</a>
+        <a href="#materials" data-nav="materials" class="nav-link border-b-2 border-transparent py-1 text-white/75 transition-colors hover:text-white">Materials</a>
+        <a href="#teaching" data-nav="teaching" class="nav-link border-b-2 border-transparent py-1 text-white/75 transition-colors hover:text-white">Teaching</a>
+        <a href="#media" data-nav="media" class="nav-link border-b-2 border-transparent py-1 text-white/75 transition-colors hover:text-white">Media</a>
+        <a href="#contact" data-nav="contact" class="nav-link border-b-2 border-transparent py-1 text-white/75 transition-colors hover:text-white">CV &amp; Contact</a>
+      </nav>
+
+      <!-- Responsive Mobile Menu Toggle -->
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        class="md:hidden inline-flex items-center justify-center rounded-lg border border-white/20 bg-navyDark p-2.5 text-white transition-colors hover:border-white/40"
+      >
+        <svg id="icon-hamburger" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg id="icon-close" class="hidden h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Dark-Navy Mobile Dropdown Navigation -->
+    <nav
+      id="mobile-menu"
+      aria-label="Mobile Navigation"
+      class="hidden border-t border-white/10 bg-navyDark px-5 py-3 md:hidden"
+    >
+      <div class="flex flex-col space-y-1 text-sm">
+        <a href="#about" class="mobile-nav-link rounded-lg px-3 py-2.5 text-white/90 transition-colors hover:bg-white/10 hover:text-white">About</a>
+        <a href="#research" class="mobile-nav-link rounded-lg px-3 py-2.5 text-white/90 transition-colors hover:bg-white/10 hover:text-white">Research</a>
+        <a href="#materials" class="mobile-nav-link rounded-lg px-3 py-2.5 text-white/90 transition-colors hover:bg-white/10 hover:text-white">Materials</a>
+        <a href="#teaching" class="mobile-nav-link rounded-lg px-3 py-2.5 text-white/90 transition-colors hover:bg-white/10 hover:text-white">Teaching</a>
+        <a href="#media" class="mobile-nav-link rounded-lg px-3 py-2.5 text-white/90 transition-colors hover:bg-white/10 hover:text-white">Media</a>
+        <a href="#contact" class="mobile-nav-link rounded-lg px-3 py-2.5 text-white/90 transition-colors hover:bg-white/10 hover:text-white">CV &amp; Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main spans full viewport width so alternating section bands bleed edge-to-edge -->
+  <main class="w-full">
+
+    <!-- ========================================================================
+         1. HERO / ABOUT SECTION (#about) — WARM PARCHMENT BAND (#ECE7DC)
+         ======================================================================== -->
+    <section id="about" class="scroll-mt-20 w-full border-b border-hairline bg-bandAlt pt-12 pb-16 sm:pt-16 sm:pb-20">
+      <div class="mx-auto max-w-5xl px-5 sm:px-8">
+        <div class="grid grid-cols-1 items-start gap-10 md:grid-cols-12 lg:gap-12">
+
+          <!-- Left Column: Scholarly Identity, Biography & Action Bar -->
+          <div class="order-2 md:order-1 md:col-span-8">
+            <h1 class="font-serif text-4xl sm:text-5xl font-medium tracking-tight text-navy">
+              Yanchen Zhang
+            </h1>
+
+            <!-- Crisp Terracotta Editorial Rule -->
+            <div class="mt-3 h-0.5 w-12 rounded-full bg-terracotta"></div>
+
+            <!-- Pronunciation & Chinese Name -->
+            <p class="mt-3 font-mono text-xs sm:text-sm tracking-wide text-muted">
+              /yen-chen jahng/
+              <span class="mx-2 text-hairline">·</span>
+              <span class="font-serif text-base text-ink" lang="zh-Hans">张晏晨</span>
+            </p>
+
+            <!-- Institutional Subtitle -->
+            <p class="mt-4 text-[15px] sm:text-base font-medium leading-relaxed text-navy">
+              PhD Candidate in East Asian Studies, University of Arizona
+              <span class="mx-2 font-normal text-muted/50">|</span>
+              Director of International Relations, Learning Games Initiative Research Archive (LGIRA)
+            </p>
+
+            <!-- Grounded Two-Paragraph Scholarly Biography -->
+            <div class="mt-6 space-y-4 text-[15.5px] leading-[1.78] text-ink">
+              <p>
+                Yanchen Zhang studies Chinese video game history, ludophobia, and the cultural politics of play in modern China. His doctoral dissertation, <em class="font-serif text-[16.5px]">The Sin of Play: The Ludophobic Reception Against Video Games and The Act of Play in China</em> (advised by Hai Ren), traces how notions of <em class="font-serif text-[16.5px]">zhengshi</em> (legitimate, productive pursuits), educational anxiety, and state governance have shaped the conditional legitimacy of digital play from the reform era to contemporary livestreaming platforms.
+              </p>
+              <p>
+                His scholarship combines historical archival work with media archaeology and platform studies. Alongside building a personal digital archive of roughly 5,000 issues across 50 Chinese gaming periodicals (1991–2022) and companion CD-ROMs, he serves as Director of International Relations at the Learning Games Initiative Research Archive (LGIRA), collaborating with Ken McAllister and Judd Ruggill to collect and preserve Chinese gaming hardware, software, and material culture.
+              </p>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="mt-8 flex flex-wrap items-center gap-2.5 sm:gap-3">
+              <!-- Primary Solid Navy Button: Download CV (PDF) -->
+              <a
+                href="assets/CV_Yanchen_Zhang.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-lg bg-navy px-4 py-2.5 text-sm font-medium text-white shadow-xs transition-colors hover:bg-navyDark"
+              >
+                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M6 20h12a2 2 0 002-2V8.828a2 2 0 00-.586-1.414l-3.828-3.828A2 2 0 0014.172 3H6a2 2 0 00-2 2v13a2 2 0 002 2z" />
+                </svg>
+                Download CV
+              </a>
+
+              <!-- Google Scholar -->
+              <a
+                href="https://scholar.google.com/citations?user=ifbXAXpPnh8C&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-lg border border-hairline bg-cardLight px-3.5 py-2.5 text-sm font-medium text-ink shadow-xs transition-colors hover:border-navy hover:text-navy"
+              >
+                <svg class="h-4 w-4 text-muted" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+                Google Scholar
+              </a>
+
+              <!-- ORCID -->
+              <a
+                href="https://orcid.org/0009-0000-7841-878X"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 rounded-lg border border-hairline bg-cardLight px-3.5 py-2.5 text-sm font-medium text-ink shadow-xs transition-colors hover:border-navy hover:text-navy"
+              >
+                <svg class="h-4 w-4 text-muted" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 10v5M9 7.5h.01M12.5 15V10h1.75a2.5 2.5 0 010 5H12.5z" />
+                </svg>
+                ORCID
+              </a>
+
+              <!-- Copy Institutional Email Button -->
+              <button
+                type="button"
+                onclick="copyInstitutionalEmail(this)"
+                aria-label="Copy email address yzhang25@arizona.edu"
+                class="inline-flex items-center gap-2 rounded-lg border border-hairline bg-cardLight px-3.5 py-2.5 text-sm font-medium text-ink shadow-xs transition-colors hover:border-navy hover:text-navy"
+              >
+                <svg class="h-4 w-4 text-muted" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span class="copy-label">Copy Email</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: 3:4 Portrait Frame Matted on Elevated Light Card -->
+          <div class="order-1 md:order-2 md:col-span-4 flex justify-center md:justify-end">
+            <figure class="w-56 sm:w-64 md:w-full max-w-[272px]">
+              <div class="relative aspect-[3/4] w-full overflow-hidden rounded-xl border border-hairline bg-cardLight p-2 shadow-xs">
+                <div class="relative h-full w-full overflow-hidden rounded-lg bg-warmCard">
+                  <img
+                    id="img-portrait"
+                    src="assets/portrait.webp"
+                    alt="Portrait of Yanchen Zhang"
+                    class="h-full w-full object-cover object-top"
+                    onload="handleImageLoad('portrait')"
+                    onerror="handleImageError('portrait')"
+                  />
+                  <!-- Graceful Initials Fallback (Shown only if assets/portrait.webp is absent) -->
+                  <div
+                    id="fallback-portrait"
+                    class="hidden absolute inset-0 flex flex-col items-center justify-center border border-dashed border-hairline bg-warmCard px-6 text-center"
+                  >
+                    <span class="font-serif text-3xl font-medium tracking-wider text-navy/65">YZ</span>
+                    <div class="my-3 h-px w-8 bg-terracotta/50"></div>
+                    <p class="font-mono text-[11px] tracking-wide text-muted">assets/portrait.webp</p>
+                  </div>
+                </div>
+              </div>
+              <figcaption class="mt-2.5 text-center font-mono text-xs text-muted">
+                Yanchen Zhang · Tucson / Qingdao
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         2. RESEARCH, EDUCATION & PUBLICATIONS (#research) — LIGHT IVORY BAND (#FAF8F5)
+         ======================================================================== -->
+    <section id="research" class="scroll-mt-20 w-full border-b border-hairline bg-bandLight py-16">
+      <div class="mx-auto max-w-5xl px-5 sm:px-8">
+        <div class="mb-10">
+          <p class="font-mono text-xs uppercase tracking-[0.14em] text-terracotta">Scholarship</p>
+          <h2 class="mt-1 font-serif text-3xl font-medium tracking-tight text-navy">
+            Research, Education &amp; Publications
+          </h2>
+        </div>
+
+        <!-- Education -->
+        <div class="border-b border-hairline pb-10">
+          <h3 class="font-serif text-2xl font-medium text-ink">Education</h3>
+          <div class="mt-5 space-y-4">
+            <!-- Featured PhD Card -->
+            <article class="rounded-xl border border-hairline border-l-4 border-l-navy bg-cardLight p-5 sm:p-6 shadow-xs">
+              <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                <h4 class="font-serif text-lg font-medium text-ink">
+                  PhD in East Asian Studies, University of Arizona
+                </h4>
+                <span class="font-mono text-xs font-medium text-terracotta shrink-0">2022–present</span>
+              </div>
+              <p class="mt-1 text-sm text-muted">
+                Doctoral Candidate · Advisor: Hai Ren
+              </p>
+              <p class="mt-2 text-[15px] leading-relaxed text-ink">
+                Dissertation: <em class="font-serif">“The Sin of Play: The Ludophobic Reception Against Video Games and The Act of Play in China.”</em>
+              </p>
+            </article>
+
+            <!-- MA & BA Grid -->
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <article class="rounded-xl border border-hairline bg-warmCard/70 p-5">
+                <div class="flex items-baseline justify-between gap-2">
+                  <h4 class="font-serif text-lg font-medium text-ink">MA in East Asian Studies</h4>
+                  <span class="font-mono text-xs text-terracotta shrink-0">2018–2020</span>
+                </div>
+                <p class="mt-0.5 text-sm text-muted">University of Southern California</p>
+                <p class="mt-2.5 text-sm leading-relaxed text-ink">
+                  Master’s Thesis: <em class="font-serif">“The Lineage of Figures and Attributes of Xia Embodied in Chinese Xia Video Games.”</em>
+                </p>
+              </article>
+
+              <article class="rounded-xl border border-hairline bg-warmCard/70 p-5">
+                <div class="flex items-baseline justify-between gap-2">
+                  <h4 class="font-serif text-lg font-medium text-ink">BA in History</h4>
+                  <span class="font-mono text-xs text-terracotta shrink-0">2014–2018</span>
+                </div>
+                <p class="mt-0.5 text-sm text-muted">Kent State University</p>
+                <p class="mt-2.5 text-sm leading-relaxed text-ink">
+                  <em class="font-serif">Magna cum laude</em>, Valedictorian
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Refereed Publications -->
+        <div class="border-b border-hairline py-10">
+          <h3 class="font-serif text-2xl font-medium text-ink">Refereed Publications</h3>
+          <ul class="mt-5 divide-y divide-hairline rounded-xl border border-hairline bg-cardLight shadow-xs">
+            <!-- Published -->
+            <li class="p-5 sm:px-6">
+              <div class="flex flex-col gap-2.5 sm:flex-row sm:items-start sm:gap-4">
+                <span class="inline-block w-fit shrink-0 rounded-md border border-hairline bg-warmCard px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider text-ink">
+                  Published
+                </span>
+                <p class="text-[15px] leading-relaxed text-ink">
+                  Liu, S., Liu, H., &amp; Zhang, Y. (2023). The popularity of “X Gou”: Analysis of Internet buzzwords from the Perspective of memetics. <em class="font-serif">Selected Papers of the 27th Conference of Pan-Pacific Association of Applied Linguistics</em>.
+                </p>
+              </div>
+            </li>
+
+            <!-- Under Review -->
+            <li class="p-5 sm:px-6">
+              <div class="flex flex-col gap-2.5 sm:flex-row sm:items-start sm:gap-4">
+                <span class="inline-block w-fit shrink-0 rounded-md border border-terracotta/25 bg-terracottaTint px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider text-terracotta">
+                  Under Review
+                </span>
+                <p class="text-[15px] leading-relaxed text-ink">
+                  Yanchen Zhang, “The Sin of Play: <em class="font-serif">Zhengshi</em> and the Conditional Legitimacy of Video Games in China,” Revise and resubmit invited by <em class="font-serif">The Journal of Popular Culture</em>.
+                </p>
+              </div>
+            </li>
+
+            <!-- In Revision -->
+            <li class="p-5 sm:px-6">
+              <div class="flex flex-col gap-2.5 sm:flex-row sm:items-start sm:gap-4">
+                <span class="inline-block w-fit shrink-0 rounded-md border border-navy/20 bg-navyTint px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider text-navy">
+                  In Revision
+                </span>
+                <p class="text-[15px] leading-relaxed text-ink">
+                  Yanchen Zhang, “Why Have Nationalistic Video Games Failed in the Chinese Market?,” <em class="font-serif">ROMchip: A Journal of Game Histories</em> (Revised and resubmitted, September 2026).
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Research & Archival Experience -->
+        <div class="border-b border-hairline py-10">
+          <h3 class="font-serif text-2xl font-medium text-ink">Research &amp; Archival Experience</h3>
+          <div class="mt-5 grid grid-cols-1 gap-6 md:grid-cols-2">
+            <!-- Independent Research Project -->
+            <article class="rounded-xl border border-hairline bg-cardLight p-6 shadow-xs">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-terracotta">
+                Independent Research Project
+              </p>
+              <h4 class="mt-1.5 font-serif text-xl font-medium text-ink">
+                Chinese Gaming Periodicals Archive
+              </h4>
+              <p class="mt-3 text-[15px] leading-relaxed text-muted">
+                Assembled a digital archive of ~5,000 issues across ~50 Chinese periodical titles (1991–2022) with companion CD-ROMs through personal collecting, retrospective forum searches, and collaboration with amateur preservationists to study debates on play, educational marketing, gaming technologies, and player experience.
+              </p>
+            </article>
+
+            <!-- LGIRA -->
+            <article class="rounded-xl border border-hairline bg-cardLight p-6 shadow-xs">
+              <p class="font-mono text-[11px] uppercase tracking-wider text-navy">
+                Director of International Relations · 2024–present
+              </p>
+              <h4 class="mt-1.5 font-serif text-xl font-medium text-ink">
+                Learning Games Initiative Research Archive (LGIRA)
+              </h4>
+              <p class="mt-3 text-[15px] leading-relaxed text-muted">
+                Collaborates with Ken McAllister and Judd Ruggill on acquiring and documenting Chinese gaming artifacts; conducted independent fieldwork at the China Game Museum in Shanghai (August 2026), producing a photographic record and written report on exhibitions, playable displays, and historiography.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Conference Presentations -->
+        <div class="pt-10">
+          <h3 class="font-serif text-2xl font-medium text-ink">Conference Presentations</h3>
+          <ol class="mt-5 divide-y divide-hairline rounded-xl border border-hairline bg-cardLight shadow-xs">
+            <li class="flex flex-col gap-1.5 p-5 sm:flex-row sm:items-baseline sm:gap-5 sm:px-6 text-[15px] leading-relaxed">
+              <span class="font-mono text-xs font-medium text-terracotta shrink-0 sm:w-12">2025</span>
+              <p class="text-ink">
+                “The Sin of Play: The Criticisms against the Act of Play in China.” <em class="font-serif">Southwest Popular/American Culture Association (SWPACA) Conference</em>, Albuquerque, NM (Feb 22, 2025).
+              </p>
+            </li>
+            <li class="flex flex-col gap-1.5 p-5 sm:flex-row sm:items-baseline sm:gap-5 sm:px-6 text-[15px] leading-relaxed">
+              <span class="font-mono text-xs font-medium text-terracotta shrink-0 sm:w-12">2024</span>
+              <p class="text-ink">
+                “TV Shows Can Be Nationalistic but Games Can’t: The Absence of Nationalistic Chinese Video Games.” <em class="font-serif">SWPACA Conference</em>, Albuquerque, NM (Feb 21, 2024).
+              </p>
+            </li>
+            <li class="flex flex-col gap-1.5 p-5 sm:flex-row sm:items-baseline sm:gap-5 sm:px-6 text-[15px] leading-relaxed">
+              <span class="font-mono text-xs font-medium text-terracotta shrink-0 sm:w-12">2023</span>
+              <p class="text-ink">
+                “The Sin of Play: The Criticisms against the Act of Play in China.” <em class="font-serif">Central and Eastern European Game Studies (CEEGS) Conference</em>, Leipzig, Germany (Oct 20, 2023).
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         3. SELECTED ARCHIVAL & FIELDWORK MATERIALS (#materials) — WARM PARCHMENT BAND (#ECE7DC)
+         ======================================================================== -->
+    <section id="materials" class="scroll-mt-20 w-full border-b border-hairline bg-bandAlt py-16">
+      <div class="mx-auto max-w-5xl px-5 sm:px-8">
+        <div class="mb-10 max-w-3xl">
+          <p class="font-mono text-xs uppercase tracking-[0.14em] text-terracotta">Primary Sources &amp; Material Culture</p>
+          <h2 class="mt-1 font-serif text-3xl font-medium tracking-tight text-navy">
+            Selected Archival &amp; Fieldwork Materials
+          </h2>
+          <p class="mt-2.5 text-[15px] leading-relaxed text-muted">
+            Representative selections from Chinese gaming artifacts acquired for the Learning Games Initiative Research Archive (LGIRA), museum fieldwork in Shanghai, and an ongoing personal digital archive of approximately 5,000 Chinese gaming periodical issues (1991–2022).
+          </p>
+        </div>
+
+        <!-- Symmetrical 2x2 Desktop Grid (1 Column on Mobile) with Elevated #FCFBF8 Cards -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+          <!-- Plate 1: Subor SB-486D (LGIRA Collection) -->
+          <article
+            onclick="openLightbox(0)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(0);}"
+            tabindex="0"
+            role="button"
+            aria-label="Inspect Plate 1: Subor (Xiaobawang) SB-486D"
+            class="group flex cursor-pointer flex-col overflow-hidden rounded-xl border border-hairline bg-cardLight shadow-xs transition-colors hover:border-navy/60 focus:outline-none focus:ring-2 focus:ring-navy"
+          >
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-plateStage">
+              <img
+                id="img-plate-0"
+                src="assets/subor_sb486d.webp"
+                alt="Subor (Xiaobawang) SB-486D Chinese-English Computer Learning Machine packaging featuring Jackie Chan alongside a light gun and yellow cartridges"
+                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.015]"
+                onload="handleImageLoad('plate-0')"
+                onerror="handleImageError('plate-0')"
+              />
+              <div
+                id="fallback-plate-0"
+                class="hidden absolute inset-0 flex flex-col items-center justify-center border-b border-dashed border-hairline bg-warmCard px-6 text-center"
+              >
+                <span class="font-mono text-[10.5px] uppercase tracking-widest text-terracotta">Plate 01 · Archival Acquisition</span>
+                <p class="mt-1.5 font-serif text-base font-medium text-navy">Subor SB-486D Learning Machine</p>
+                <p class="mt-1 font-mono text-[11px] text-muted">assets/subor_sb486d.webp</p>
+              </div>
+              <span class="pointer-events-none absolute right-3 top-3 rounded-md bg-navy/85 px-2.5 py-0.5 font-mono text-[10.5px] tracking-wide text-white">
+                View Plate
+              </span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <span class="inline-block w-fit rounded-md bg-terracottaTint px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider text-terracotta">
+                Archival Acquisition · LGIRA Collection
+              </span>
+              <h3 class="mt-2.5 font-serif text-lg font-medium leading-snug text-ink group-hover:text-navy">
+                Subor (Xiaobawang) SB-486D “Chinese-English Computer Learning Machine” (1990s)
+              </h3>
+              <p class="mt-2.5 text-sm leading-relaxed text-muted">
+                Original retail packaging featuring Jackie Chan alongside a Subor light gun and Famicom-compatible yellow cartridges—illustrating how domestic gaming hardware navigated parental anxieties through educational framing. Collected by Yanchen Zhang during his archival work for the Learning Games Initiative Research Archive (LGIRA); now housed in the LGIRA collection.
+              </p>
+            </div>
+          </article>
+
+          <!-- Plate 2: Green Dam OEM Installation CD-ROM (LGIRA Collection; object-contain so disc is never cropped) -->
+          <article
+            onclick="openLightbox(1)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(1);}"
+            tabindex="0"
+            role="button"
+            aria-label="Inspect Plate 2: Green Dam–Youth Escort Installation CD-ROM"
+            class="group flex cursor-pointer flex-col overflow-hidden rounded-xl border border-hairline bg-cardLight shadow-xs transition-colors hover:border-navy/60 focus:outline-none focus:ring-2 focus:ring-navy"
+          >
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-[#EFECE6]">
+              <img
+                id="img-plate-1"
+                src="assets/greendam_cdrom.webp"
+                alt="Green Dam–Youth Escort (Lüba–Huaji Huhang) 2009 ASUS OEM installation CD-ROM"
+                class="h-full w-full object-contain bg-[#EFECE6] p-3 transition-transform duration-300 group-hover:scale-[1.02]"
+                onload="handleImageLoad('plate-1')"
+                onerror="handleImageError('plate-1')"
+              />
+              <div
+                id="fallback-plate-1"
+                class="hidden absolute inset-0 flex flex-col items-center justify-center border-b border-dashed border-hairline bg-warmCard px-6 text-center"
+              >
+                <span class="font-mono text-[10.5px] uppercase tracking-widest text-terracotta">Plate 02 · Archival Acquisition</span>
+                <p class="mt-1.5 font-serif text-base font-medium text-navy">Green Dam Installation CD-ROM (2009)</p>
+                <p class="mt-1 font-mono text-[11px] text-muted">assets/greendam_cdrom.webp</p>
+              </div>
+              <span class="pointer-events-none absolute right-3 top-3 rounded-md bg-navy/85 px-2.5 py-0.5 font-mono text-[10.5px] tracking-wide text-white">
+                View Plate
+              </span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <span class="inline-block w-fit rounded-md bg-terracottaTint px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider text-terracotta">
+                Archival Acquisition · LGIRA Collection
+              </span>
+              <h3 class="mt-2.5 font-serif text-lg font-medium leading-snug text-ink group-hover:text-navy">
+                Green Dam–Youth Escort (<em class="font-serif">Lüba–Huaji Huhang</em>) Installation CD-ROM (ASUS OEM, 2009)
+              </h3>
+              <p class="mt-2.5 text-sm leading-relaxed text-muted">
+                Hardware-bundled installation disc distributed with ASUS personal computers during China’s 2009 Ministry of Industry and Information Technology (MIIT) content-filtering initiative, documenting state technological governance and anxieties over youth access to home PCs. Collected by Yanchen Zhang during his archival work for the Learning Games Initiative Research Archive (LGIRA); now housed in the LGIRA collection.
+              </p>
+            </div>
+          </article>
+
+          <!-- Plate 3: Reconstructed 1990s Chinese Domestic Living Room (Shanghai Fieldwork) -->
+          <article
+            onclick="openLightbox(2)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(2);}"
+            tabindex="0"
+            role="button"
+            aria-label="Inspect Plate 3: Reconstructed 1990s Chinese Domestic Living Room"
+            class="group flex cursor-pointer flex-col overflow-hidden rounded-xl border border-hairline bg-cardLight shadow-xs transition-colors hover:border-navy/60 focus:outline-none focus:ring-2 focus:ring-navy"
+          >
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-plateStage">
+              <img
+                id="img-plate-2"
+                src="assets/gmc_living_room.webp"
+                alt="Reconstructed 1990s Chinese domestic living room at the China Game Museum showing a Subor learning machine, CRT television, and school merit certificates"
+                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.015]"
+                onload="handleImageLoad('plate-2')"
+                onerror="handleImageError('plate-2')"
+              />
+              <div
+                id="fallback-plate-2"
+                class="hidden absolute inset-0 flex flex-col items-center justify-center border-b border-dashed border-hairline bg-warmCard px-6 text-center"
+              >
+                <span class="font-mono text-[10.5px] uppercase tracking-widest text-navy">Plate 03 · Museum Fieldwork</span>
+                <p class="mt-1.5 font-serif text-base font-medium text-navy">1990s Chinese Domestic Living Room</p>
+                <p class="mt-1 font-mono text-[11px] text-muted">assets/gmc_living_room.webp</p>
+              </div>
+              <span class="pointer-events-none absolute right-3 top-3 rounded-md bg-navy/85 px-2.5 py-0.5 font-mono text-[10.5px] tracking-wide text-white">
+                View Plate
+              </span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <span class="inline-block w-fit rounded-md bg-navyTint px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider text-navy">
+                Museum Fieldwork · Shanghai, 2026
+              </span>
+              <h3 class="mt-2.5 font-serif text-lg font-medium leading-snug text-ink group-hover:text-navy">
+                Reconstructed 1990s Chinese Domestic Living Room
+              </h3>
+              <p class="mt-2.5 text-sm leading-relaxed text-muted">
+                A Subor (Xiaobawang) keyboard-style learning machine and yellow cartridges sit before a CRT television beneath two school merit certificates (<em class="font-serif">jiangzhuang</em>), capturing the spatial coexistence of play and parental educational expectations. Exhibition display curated by the China Game Museum (Shanghai); fieldwork photograph by Yanchen Zhang, August 2026.
+              </p>
+            </div>
+          </article>
+
+          <!-- Plate 4: Computer Mall Retail Counter (Shanghai Fieldwork) -->
+          <article
+            onclick="openLightbox(3)"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openLightbox(3);}"
+            tabindex="0"
+            role="button"
+            aria-label="Inspect Plate 4: Reconstructed Late-1990s–2000s Computer Mall Game Retail Counter"
+            class="group flex cursor-pointer flex-col overflow-hidden rounded-xl border border-hairline bg-cardLight shadow-xs transition-colors hover:border-navy/60 focus:outline-none focus:ring-2 focus:ring-navy"
+          >
+            <div class="relative aspect-[4/3] w-full overflow-hidden bg-plateStage">
+              <img
+                id="img-plate-3"
+                src="assets/gmc_computer_mall.webp"
+                alt="Reconstructed late-1990s to 2000s Chinese computer mall game retail counter displaying PC software and CD-R burning services"
+                class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.015]"
+                onload="handleImageLoad('plate-3')"
+                onerror="handleImageError('plate-3')"
+              />
+              <div
+                id="fallback-plate-3"
+                class="hidden absolute inset-0 flex flex-col items-center justify-center border-b border-dashed border-hairline bg-warmCard px-6 text-center"
+              >
+                <span class="font-mono text-[10.5px] uppercase tracking-widest text-navy">Plate 04 · Museum Fieldwork</span>
+                <p class="mt-1.5 font-serif text-base font-medium text-navy">Computer Mall Game Retail Counter</p>
+                <p class="mt-1 font-mono text-[11px] text-muted">assets/gmc_computer_mall.webp</p>
+              </div>
+              <span class="pointer-events-none absolute right-3 top-3 rounded-md bg-navy/85 px-2.5 py-0.5 font-mono text-[10.5px] tracking-wide text-white">
+                View Plate
+              </span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <span class="inline-block w-fit rounded-md bg-navyTint px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider text-navy">
+                Museum Fieldwork · Shanghai, 2026
+              </span>
+              <h3 class="mt-2.5 font-serif text-lg font-medium leading-snug text-ink group-hover:text-navy">
+                Reconstructed Late-1990s–2000s Computer Mall (<em class="font-serif">Diannaocheng</em>) Game Retail Counter
+              </h3>
+              <p class="mt-2.5 text-sm leading-relaxed text-muted">
+                Glass display cases advertising both budget genuine releases (“10-yuan genuine storm”) and custom CD-R burning services illustrate the hybrid commercial and informal circulation networks of PC gaming in urban China. Exhibition display curated by the China Game Museum (Shanghai); fieldwork photograph by Yanchen Zhang, August 2026.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         4. TEACHING SECTION (#teaching) — LIGHT IVORY BAND (#FAF8F5)
+         ======================================================================== -->
+    <section id="teaching" class="scroll-mt-20 w-full border-b border-hairline bg-bandLight py-16">
+      <div class="mx-auto max-w-5xl px-5 sm:px-8">
+        <div class="mb-10">
+          <p class="font-mono text-xs uppercase tracking-[0.14em] text-terracotta">Pedagogy</p>
+          <h2 class="mt-1 font-serif text-3xl font-medium tracking-tight text-navy">Teaching</h2>
+        </div>
+
+        <!-- Featured Sample Syllabus Card -->
+        <div class="rounded-xl border border-hairline bg-cardLight p-6 sm:p-8 shadow-xs">
+          <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-wider text-navy">
+                15-Week Undergraduate Seminar · Sample Syllabus
+              </p>
+              <h3 class="mt-1.5 font-serif text-2xl font-medium text-ink">
+                Introduction to Chinese Popular Culture through Video Games
+              </h3>
+            </div>
+            <a
+              href="assets/Syllabus_Chinese_Popular_Culture_Video_Games.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex shrink-0 items-center justify-center gap-2 rounded-lg bg-navy px-4 py-2.5 text-sm font-medium text-white shadow-xs transition-colors hover:bg-navyDark"
+            >
+              <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M6 20h12a2 2 0 002-2V8.828a2 2 0 00-.586-1.414l-3.828-3.828A2 2 0 0014.172 3H6a2 2 0 00-2 2v13a2 2 0 002 2z" />
+              </svg>
+              Download Sample Syllabus (PDF)
+            </a>
+          </div>
+
+          <p class="mt-4 text-[15px] leading-relaxed text-muted">
+            An interdisciplinary seminar introducing contemporary Chinese popular culture, modern history, and society through video games examined as designed systems, material technologies, commercial products, and contested everyday practices. Across fifteen weeks, students analyze game studies theory, comparative moral panics, Confucian and modern ideologies of leisure, <em class="font-serif">wangba</em> (Internet cafés), state regulation, nationalism, livestreaming governance, and the global reach of the Chinese game industry.
+          </p>
+
+          <!-- Interactive 4-Tab Underline Unit Switcher (All 15 Weeks) -->
+          <div class="mt-8">
+            <div
+              role="tablist"
+              aria-label="Course Schedule Units"
+              class="flex flex-wrap gap-x-6 gap-y-2 border-b border-hairline"
+            >
+              <button
+                type="button"
+                role="tab"
+                id="tab-unit1"
+                aria-selected="true"
+                aria-controls="panel-unit1"
+                onclick="switchSyllabusUnit('unit1')"
+                class="unit-tab -mb-px border-b-2 border-navy pb-3 text-sm font-medium text-navy transition-colors"
+              >
+                Part I <span class="ml-1 font-mono text-xs text-muted">(Wks 1–3)</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="tab-unit2"
+                aria-selected="false"
+                aria-controls="panel-unit2"
+                onclick="switchSyllabusUnit('unit2')"
+                class="unit-tab -mb-px border-b-2 border-transparent pb-3 text-sm font-medium text-muted transition-colors hover:text-ink"
+              >
+                Part II <span class="ml-1 font-mono text-xs text-muted">(Wks 4–8)</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="tab-unit3"
+                aria-selected="false"
+                aria-controls="panel-unit3"
+                onclick="switchSyllabusUnit('unit3')"
+                class="unit-tab -mb-px border-b-2 border-transparent pb-3 text-sm font-medium text-muted transition-colors hover:text-ink"
+              >
+                Part III <span class="ml-1 font-mono text-xs text-muted">(Wks 9–13)</span>
+              </button>
+              <button
+                type="button"
+                role="tab"
+                id="tab-unit4"
+                aria-selected="false"
+                aria-controls="panel-unit4"
+                onclick="switchSyllabusUnit('unit4')"
+                class="unit-tab -mb-px border-b-2 border-transparent pb-3 text-sm font-medium text-muted transition-colors hover:text-ink"
+              >
+                Part IV <span class="ml-1 font-mono text-xs text-muted">(Wks 14–15)</span>
+              </button>
+            </div>
+
+            <!-- Tab 1 — Part I: Play, Interactivity, and Agency (Weeks 1–3) -->
+            <div id="panel-unit1" role="tabpanel" aria-labelledby="tab-unit1" class="unit-panel pt-5">
+              <h4 class="font-serif text-lg font-medium text-navy">Part I: Play, Interactivity, and Agency</h4>
+              <ul class="mt-3 divide-y divide-hairline">
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 1</span>
+                    <span class="font-medium text-ink">Course Introduction — Studying Chinese Popular Culture through Video Games</span>
+                  </div>
+                </li>
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 2</span>
+                    <span class="font-medium text-ink">The Nature of Play and Games</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Reading: Johan Huizinga, <em class="font-serif">Homo Ludens</em> (Ch. 1–2). · <strong class="font-medium text-ink">Featured Game:</strong> <em class="font-serif">Baba Is You</em> (2019).
+                  </p>
+                </li>
+                <li class="pt-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 3</span>
+                    <span class="font-medium text-ink">Interactivity, Rules, and Player Agency</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Reading: Daniel Muriel &amp; Garry Crawford (2020), <em class="font-serif">Games and Culture</em>. · <strong class="font-medium text-ink">Featured Game:</strong> <em class="font-serif">The Stanley Parable</em> (2013).
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tab 2 — Part II: Ludophobia, Moral Panics, and Spaces of Regulation (Weeks 4–8) -->
+            <div id="panel-unit2" role="tabpanel" aria-labelledby="tab-unit2" class="unit-panel hidden pt-5">
+              <h4 class="font-serif text-lg font-medium text-navy">Part II: Ludophobia, Moral Panics, and Spaces of Regulation</h4>
+              <ul class="mt-3 divide-y divide-hairline">
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 4</span>
+                    <span class="font-medium text-ink">Comparative Controversies — Violence, Sexuality, and Content Regulation</span>
+                    <span class="rounded bg-navyTint px-2 py-0.5 font-mono text-[11px] font-medium text-navy">Essay 1 Due</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Reading: Pelletier-Gagnon &amp; Picard (2015), <em class="font-serif">Rated M for Mature</em>. · <strong class="font-medium text-ink">Featured Game:</strong> <em class="font-serif">Grand Theft Auto V</em> (2013).
+                  </p>
+                </li>
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 5</span>
+                    <span class="font-medium text-ink">Play, Obligation, and Confucian Legacies</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Readings: Limin Bai (2005); Yichen Rao et al. (2019). · <strong class="font-medium text-ink">Featured Game:</strong> <em class="font-serif">Chinese Parents</em> (2018).
+                  </p>
+                </li>
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 6</span>
+                    <span class="font-medium text-ink">“Electronic Heroin” and the Internet Addiction Moral Panic</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Reading: Marcella Szablewicz (2020), Ch. 3. · <strong class="font-medium text-ink">Featured Game:</strong> <em class="font-serif">BreakOut 13</em> (2023).
+                  </p>
+                </li>
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 7</span>
+                    <span class="font-medium text-ink">Gaming Spaces, <em class="font-serif">Wangba</em> (Internet Cafés), and Youth Sociality</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Reading: Szablewicz (2020), Ch. 2; 1990s–2000s Chinese gaming magazine primary source packet.
+                  </p>
+                </li>
+                <li class="pt-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 8</span>
+                    <span class="font-medium text-ink">State Governance, Technological Filtering, and Regulatory Design</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Readings: OpenNet Initiative, <em class="font-serif">China’s Green Dam</em> (2009); Richard Stone, <em class="font-serif">Science</em> (2009). · <strong class="font-medium text-ink">Featured Comparison:</strong> <em class="font-serif">Game for Peace</em> vs. <em class="font-serif">PUBG: Battlegrounds</em>.
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tab 3 — Part III: History, Ideology, and the Legitimation of Play in Modern China (Weeks 9–13) -->
+            <div id="panel-unit3" role="tabpanel" aria-labelledby="tab-unit3" class="unit-panel hidden pt-5">
+              <h4 class="font-serif text-lg font-medium text-navy">Part III: History, Ideology, and the Legitimation of Play in Modern China</h4>
+              <ul class="mt-3 divide-y divide-hairline">
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 9</span>
+                    <span class="font-medium text-ink">Justifying Play — Physical Culture, Martial Imaginaries, and National Survival</span>
+                    <span class="rounded bg-navyTint px-2 py-0.5 font-mono text-[11px] font-medium text-navy">Essay 2 Due</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Readings: David Scott (2008), Ch. 2; Zhouxiang Lu (2011). · <strong class="font-medium text-ink">Featured Game:</strong> <em class="font-serif">Phantom Blade Zero</em> (2026).
+                  </p>
+                </li>
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 10</span>
+                    <span class="font-medium text-ink">Leisure, Ideology, and Everyday Play in the Mao Era</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Readings: Richard Curt Kraus (2012), Ch. 3; Jin Dalu (2011), Ch. 14. · <strong class="font-medium text-ink">Featured Game:</strong> <em class="font-serif">Master of Pottery</em> (2019).
+                  </p>
+                </li>
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 11</span>
+                    <span class="font-medium text-ink">Post-Mao Reform, Risk Society, and the “Study Machine”</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Readings: Hai Ren (2013), Ch. 1; Lin Zhang (2013); Yahui Wang excerpts on Subor. · <strong class="font-medium text-ink">Featured Games:</strong> <em class="font-serif">Firework</em> (2021) / <em class="font-serif">A Perfect Day</em> (2022).
+                  </p>
+                </li>
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 12</span>
+                    <span class="font-medium text-ink">Nationalism, Historical Memory, and Ludic Contingency</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Readings: Hongping Annie Nie (2013); Johnathan Harrington &amp; Zimu Zhang (2022). · <strong class="font-medium text-ink">Featured Games:</strong> <em class="font-serif">The Invisible Guardian</em> (2019) &amp; <em class="font-serif">Wuchang: Fallen Feathers</em> (2025).
+                  </p>
+                </li>
+                <li class="pt-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 13</span>
+                    <span class="font-medium text-ink">From “Electronic Heroin” to “Created in China” — Esports, Platforms, and Livestreaming</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Reading: Shule Cao &amp; Wei He (2021); contemporary livestreaming compliance case materials (including the Nov 2026 <em class="font-serif">GTA VI</em> unlicensed livestreaming case).
+                  </p>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Tab 4 — Part IV: The Contemporary Industry and Course Synthesis (Weeks 14–15) -->
+            <div id="panel-unit4" role="tabpanel" aria-labelledby="tab-unit4" class="unit-panel hidden pt-5">
+              <h4 class="font-serif text-lg font-medium text-navy">Part IV: The Contemporary Industry and Course Synthesis</h4>
+              <ul class="mt-3 divide-y divide-hairline">
+                <li class="py-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 14</span>
+                    <span class="font-medium text-ink">The Chinese Video Game Industry — Global Reach, Genre Diversity, and Domestic Tensions</span>
+                    <span class="rounded bg-navyTint px-2 py-0.5 font-mono text-[11px] font-medium text-navy">Essay 3 Due</span>
+                  </div>
+                  <p class="mt-1 text-muted">
+                    Reading: Feng Chen, Ken S. McAllister, &amp; Judd Ethan Ruggill, eds., <em class="font-serif">The Chinese Video Game Industry</em> (Springer, 2024). · <strong class="font-medium text-ink">Featured Games:</strong> <em class="font-serif">Black Myth: Wukong</em> (2024), <em class="font-serif">Genshin Impact</em> (2020), <em class="font-serif">Love and Deepspace</em> (2024) / <em class="font-serif">Infinity Nikki</em> (2024).
+                  </p>
+                </li>
+                <li class="pt-3.5 text-sm leading-relaxed">
+                  <div class="flex flex-wrap items-baseline gap-2">
+                    <span class="font-mono text-xs font-medium text-terracotta">Week 15</span>
+                    <span class="font-medium text-ink">Course Synthesis, Review, and Final Examination</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- University of Arizona Teaching Experience Table -->
+        <div class="mt-12">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="font-serif text-2xl font-medium text-ink">University of Arizona Teaching Experience</h3>
+            <span class="font-mono text-xs text-muted">Graduate Associate of Teaching · 2022–present</span>
+          </div>
+
+          <div class="mt-4 overflow-hidden rounded-xl border border-hairline bg-cardLight shadow-xs">
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-sm">
+                <thead class="border-b border-hairline bg-warmCard text-xs uppercase tracking-wider text-muted">
+                  <tr>
+                    <th scope="col" class="px-5 py-3 font-mono font-medium">Course</th>
+                    <th scope="col" class="px-5 py-3 font-medium">Title</th>
+                    <th scope="col" class="px-5 py-3 text-right font-mono font-medium">Terms</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-hairline">
+                  <tr>
+                    <td class="whitespace-nowrap px-5 py-3.5 font-mono text-xs font-medium text-navy">CLAS 150C1</td>
+                    <td class="px-5 py-3.5 text-ink">Pyramids and Mummies</td>
+                    <td class="whitespace-nowrap px-5 py-3.5 text-right font-mono text-xs text-muted">Fall 2025, Fall 2024</td>
+                  </tr>
+                  <tr>
+                    <td class="whitespace-nowrap px-5 py-3.5 font-mono text-xs font-medium text-navy">FREN/ITAL 231</td>
+                    <td class="px-5 py-3.5 text-ink">Fashion and Culture</td>
+                    <td class="whitespace-nowrap px-5 py-3.5 text-right font-mono text-xs text-muted">Fall 2025</td>
+                  </tr>
+                  <tr>
+                    <td class="whitespace-nowrap px-5 py-3.5 font-mono text-xs font-medium text-navy">HUMS 150B1</td>
+                    <td class="px-5 py-3.5 text-ink">Mind-Altering Substances in the Ancient World</td>
+                    <td class="whitespace-nowrap px-5 py-3.5 text-right font-mono text-xs text-muted">Spring 2025, Fall 2024</td>
+                  </tr>
+                  <tr>
+                    <td class="whitespace-nowrap px-5 py-3.5 font-mono text-xs font-medium text-navy">RELI 367</td>
+                    <td class="px-5 py-3.5 text-ink">Yoga</td>
+                    <td class="whitespace-nowrap px-5 py-3.5 text-right font-mono text-xs text-muted">Spring 2024</td>
+                  </tr>
+                  <tr>
+                    <td class="whitespace-nowrap px-5 py-3.5 font-mono text-xs font-medium text-navy">CLAS 160B1</td>
+                    <td class="px-5 py-3.5 text-ink">Meet the Ancients</td>
+                    <td class="whitespace-nowrap px-5 py-3.5 text-right font-mono text-xs text-muted">Spring 2024</td>
+                  </tr>
+                  <tr>
+                    <td class="whitespace-nowrap px-5 py-3.5 font-mono text-xs font-medium text-navy">KOR 251</td>
+                    <td class="px-5 py-3.5 text-ink">Introduction to Korea Through Film</td>
+                    <td class="whitespace-nowrap px-5 py-3.5 text-right font-mono text-xs text-muted">Fall 2022</td>
+                  </tr>
+                  <tr>
+                    <td class="whitespace-nowrap px-5 py-3.5 font-mono text-xs font-medium text-navy">KOR 352</td>
+                    <td class="px-5 py-3.5 text-ink">Class, Gender, and Family in Korea</td>
+                    <td class="whitespace-nowrap px-5 py-3.5 text-right font-mono text-xs text-muted">Fall 2022</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         5. SELECTED MEDIA COVERAGE (#media) — WARM PARCHMENT BAND (#ECE7DC)
+         ======================================================================== -->
+    <section id="media" class="scroll-mt-20 w-full border-b border-hairline bg-bandAlt py-16">
+      <div class="mx-auto max-w-5xl px-5 sm:px-8">
+        <div class="mb-10">
+          <p class="font-mono text-xs uppercase tracking-[0.14em] text-terracotta">Public Scholarship</p>
+          <h2 class="mt-1 font-serif text-3xl font-medium tracking-tight text-navy">Selected Media Coverage</h2>
+        </div>
+
+        <ul class="divide-y divide-hairline rounded-xl border border-hairline bg-cardLight shadow-xs">
+          <!-- 1. New Lines Magazine (July 3, 2024) -->
+          <li>
+            <a
+              href="https://newlinesmag.com/spotlight/video-games-are-chinas-next-soft-power-grab/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-start justify-between gap-4 p-5 sm:px-6 transition-colors hover:bg-warmCard/70"
+            >
+              <div>
+                <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                  <span class="font-medium text-navy">New Lines Magazine</span>
+                  <span>·</span>
+                  <span>July 3, 2024</span>
+                </div>
+                <p class="mt-1.5 font-serif text-[16.5px] font-medium leading-snug text-ink group-hover:text-navy">
+                  “Video Games Are China’s Next Soft Power Grab”
+                </p>
+                <p class="mt-1 text-xs text-muted">Tim Brinkhof</p>
+              </div>
+              <svg class="mt-1 h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-terracotta" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7v9" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- 2. moomoo 証券 (July 12, 2024) -->
+          <li>
+            <a
+              href="https://www.moomoo.com/ja/community/feed/video-games-are-china-s-next-soft-power-grab-112772307812358"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-start justify-between gap-4 p-5 sm:px-6 transition-colors hover:bg-warmCard/70"
+            >
+              <div>
+                <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                  <span class="font-medium text-navy">moomoo 証券</span>
+                  <span>·</span>
+                  <span>July 12, 2024</span>
+                </div>
+                <p class="mt-1.5 font-serif text-[16.5px] font-medium leading-snug text-ink group-hover:text-navy" lang="ja">
+                  “中国はビデオゲームを次のソフトパワーの狙いとしています”
+                </p>
+                <p class="mt-1 text-xs text-muted">Winking Studios</p>
+              </div>
+              <svg class="mt-1 h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-terracotta" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7v9" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- 3. France 24 (September 1, 2024) -->
+          <li>
+            <a
+              href="https://www.france24.com/fr/%C3%A9co-tech/20240901-black-myth-wukong-jeu-video-chine-succes-nationalisme-technologique-soft-power"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-start justify-between gap-4 p-5 sm:px-6 transition-colors hover:bg-warmCard/70"
+            >
+              <div>
+                <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                  <span class="font-medium text-navy">France 24</span>
+                  <span>·</span>
+                  <span>September 1, 2024</span>
+                </div>
+                <p class="mt-1.5 font-serif text-[16.5px] font-medium leading-snug text-ink group-hover:text-navy" lang="fr">
+                  “‘Black Myth : Wukong’, Un Jeu Vidéo à Succès... et plus Si Affinité Pour La Chine”
+                </p>
+                <p class="mt-1 text-xs text-muted">Sébastien Seibt</p>
+              </div>
+              <svg class="mt-1 h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-terracotta" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7v9" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- 4. Al Jazeera (September 14, 2024) -->
+          <li>
+            <a
+              href="https://www.aljazeera.com/news/2024/9/14/black-myth-wukong-why-the-chinese-game-is-taking-the-world-by-storm"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-start justify-between gap-4 p-5 sm:px-6 transition-colors hover:bg-warmCard/70"
+            >
+              <div>
+                <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                  <span class="font-medium text-navy">Al Jazeera</span>
+                  <span>·</span>
+                  <span>September 14, 2024</span>
+                </div>
+                <p class="mt-1.5 font-serif text-[16.5px] font-medium leading-snug text-ink group-hover:text-navy">
+                  “Black Myth: Wukong – Why the Chinese game is taking the world by storm”
+                </p>
+                <p class="mt-1 text-xs text-muted">Al Jazeera Staff</p>
+              </div>
+              <svg class="mt-1 h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-terracotta" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7v9" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- 5. L'ADN (September 17, 2024) -->
+          <li>
+            <a
+              href="https://www.ladn.eu/tech-a-suivre/black-myth-wukong-jeu-video-softpower-chine/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-start justify-between gap-4 p-5 sm:px-6 transition-colors hover:bg-warmCard/70"
+            >
+              <div>
+                <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                  <span class="font-medium text-navy">L’ADN</span>
+                  <span>·</span>
+                  <span>September 17, 2024</span>
+                </div>
+                <p class="mt-1.5 font-serif text-[16.5px] font-medium leading-snug text-ink group-hover:text-navy" lang="fr">
+                  “« Black Myth: Wukong » : le soft power chinois passe aux jeux vidéo”
+                </p>
+                <p class="mt-1 text-xs text-muted">Peggy Baron</p>
+              </div>
+              <svg class="mt-1 h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-terracotta" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7v9" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- 6. Tirto.id (September 23, 2024) -->
+          <li>
+            <a
+              href="https://tirto.id/black-myth-wukong-gim-aaa-cina-yang-fenomenal-kontroversial-g313"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-start justify-between gap-4 p-5 sm:px-6 transition-colors hover:bg-warmCard/70"
+            >
+              <div>
+                <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                  <span class="font-medium text-navy">Tirto.id</span>
+                  <span>·</span>
+                  <span>September 23, 2024</span>
+                </div>
+                <p class="mt-1.5 font-serif text-[16.5px] font-medium leading-snug text-ink group-hover:text-navy" lang="id">
+                  “Black Myth: Wukong, Gim AAA Cina yang Fenomenal &amp; Kontroversial”
+                </p>
+                <p class="mt-1 text-xs text-muted">Yoga Cholandha</p>
+              </div>
+              <svg class="mt-1 h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-terracotta" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7v9" />
+              </svg>
+            </a>
+          </li>
+
+          <!-- 7. Ça m'intéresse (November 19, 2024) -->
+          <li>
+            <a
+              href="https://www.caminteresse.fr/culture/game-awards-2024-black-myth-wukong-simple-jeu-video-ou-outil-geopolitique-11198313/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex items-start justify-between gap-4 p-5 sm:px-6 transition-colors hover:bg-warmCard/70"
+            >
+              <div>
+                <div class="flex flex-wrap items-center gap-2 font-mono text-xs text-muted">
+                  <span class="font-medium text-navy">Ça m’intéresse</span>
+                  <span>·</span>
+                  <span>November 19, 2024</span>
+                </div>
+                <p class="mt-1.5 font-serif text-[16.5px] font-medium leading-snug text-ink group-hover:text-navy" lang="fr">
+                  “Game Awards 2024 : « Black Myth: Wukong », simple jeu vidéo ou outil géopolitique ?”
+                </p>
+                <p class="mt-1 text-xs text-muted">Rémi Capra-Brocard</p>
+              </div>
+              <svg class="mt-1 h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-terracotta" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H8M17 7v9" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         6. GRANTS, SERVICE, SKILLS & CONTACT (#contact) — LIGHT IVORY BAND (#FAF8F5)
+         ======================================================================== -->
+    <section id="contact" class="scroll-mt-20 w-full border-b border-hairline bg-bandLight py-16">
+      <div class="mx-auto max-w-5xl px-5 sm:px-8">
+        <div class="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-[0.14em] text-terracotta">Curriculum Vitae &amp; Correspondence</p>
+            <h2 class="mt-1 font-serif text-3xl font-medium tracking-tight text-navy">
+              Grants, Service, Skills &amp; Contact
+            </h2>
+          </div>
+
+          <a
+            href="assets/CV_Yanchen_Zhang.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex w-fit items-center gap-2 rounded-lg bg-navy px-4 py-2.5 text-sm font-medium text-white shadow-xs transition-colors hover:bg-navyDark"
+          >
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3M6 20h12a2 2 0 002-2V8.828a2 2 0 00-.586-1.414l-3.828-3.828A2 2 0 0014.172 3H6a2 2 0 00-2 2v13a2 2 0 002 2z" />
+            </svg>
+            Download Full CV (PDF)
+          </a>
+        </div>
+
+        <!-- Structured CV Summary Grid -->
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+          <!-- Left Column: Grants & Fellowships + Streamlined Languages & Technical Skills -->
+          <div class="space-y-6">
+            <!-- Grants & Fellowships -->
+            <div class="rounded-xl border border-hairline bg-cardLight p-6 shadow-xs">
+              <h3 class="font-serif text-xl font-medium text-navy">Grants &amp; Fellowships</h3>
+              <ul class="mt-4 divide-y divide-hairline text-sm leading-relaxed">
+                <li class="flex items-baseline justify-between gap-3 pb-3.5">
+                  <span class="text-ink">Center of East Asia Student Research Funding <span class="text-muted">($1,000)</span></span>
+                  <span class="font-mono text-xs text-terracotta shrink-0">2025</span>
+                </li>
+                <li class="flex items-baseline justify-between gap-3 py-3.5">
+                  <span class="text-ink">GPSC Research and Project Grant <span class="text-muted">($1,500)</span></span>
+                  <span class="font-mono text-xs text-terracotta shrink-0">2025</span>
+                </li>
+                <li class="flex items-baseline justify-between gap-3 py-3.5">
+                  <span class="text-ink">Chinese Game Research Fellowship, College of Humanities <span class="text-muted">($2,000)</span></span>
+                  <span class="font-mono text-xs text-terracotta shrink-0">2024</span>
+                </li>
+                <li class="flex items-baseline justify-between gap-3 pt-3.5">
+                  <span class="text-ink">School of International Languages, Literatures and Culture Travel Grant <span class="text-muted">($1,000)</span></span>
+                  <span class="font-mono text-xs text-terracotta shrink-0">2024</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Streamlined Languages & Technical Skills (High-signal academic profile) -->
+            <div class="rounded-xl border border-hairline bg-cardLight p-6 shadow-xs">
+              <h3 class="font-serif text-xl font-medium text-navy">Languages &amp; Technical Skills</h3>
+              <dl class="mt-4 space-y-3.5 text-sm leading-relaxed">
+                <div>
+                  <dt class="font-mono text-[11px] uppercase tracking-wider text-terracotta">Languages</dt>
+                  <dd class="mt-1 text-ink">Mandarin Chinese (Native), English (Fluent), Japanese (Intermediate)</dd>
+                </div>
+                <div class="border-t border-hairline pt-3.5">
+                  <dt class="font-mono text-[11px] uppercase tracking-wider text-terracotta">Game &amp; Media Tools</dt>
+                  <dd class="mt-1.5 flex flex-wrap gap-2">
+                    <span class="rounded-md border border-navy/15 bg-navyTint px-2.5 py-0.5 text-xs font-medium text-navy">Unity</span>
+                    <span class="rounded-md border border-navy/15 bg-navyTint px-2.5 py-0.5 text-xs font-medium text-navy">Blender</span>
+                  </dd>
+                </div>
+                <div class="border-t border-hairline pt-3.5">
+                  <dt class="font-mono text-[11px] uppercase tracking-wider text-terracotta">Archival &amp; Research Methods</dt>
+                  <dd class="mt-1 text-ink">Historical Media Preservation &amp; Digitization, Digital Ethnography, Qualitative Discourse Analysis</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+          <!-- Right Column: Honors & Service -->
+          <div class="rounded-xl border border-hairline bg-cardLight p-6 shadow-xs">
+            <h3 class="font-serif text-xl font-medium text-navy">Honors &amp; Service</h3>
+            <ul class="mt-4 divide-y divide-hairline text-sm leading-relaxed">
+              <li class="pb-4">
+                <div class="flex items-baseline justify-between gap-2">
+                  <span class="font-medium text-ink">KSU Distinguished Student Award (Valedictorian)</span>
+                  <span class="font-mono text-xs text-terracotta shrink-0">2018</span>
+                </div>
+                <p class="mt-1 text-muted">President’s Lists &amp; Dean’s Lists (2015–2018), Kent State University</p>
+              </li>
+              <li class="py-4">
+                <p class="font-medium text-ink">Peer Reviewer, <em class="font-serif">East Asian Forum</em></p>
+              </li>
+              <li class="pt-4">
+                <div class="flex items-baseline justify-between gap-2">
+                  <span class="font-medium text-ink">Graduate Associate of Research, Center of East Asian Studies</span>
+                  <span class="font-mono text-xs text-terracotta shrink-0">2022–2024</span>
+                </div>
+                <p class="mt-1.5 text-muted">
+                  Organized the East Asian Language and Culture Festival (2023, 2024), 2023 AETA Conference, CEAS Symposium 2023, Tucson Festival of Books, UArizona Language Fair 2023, and academic talks and film screenings.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Institutional Contact Card (Privacy-Safe: No personal phone numbers or personal Gmail) -->
+        <div class="mt-10 rounded-xl border border-hairline bg-cardLight p-6 sm:p-8 shadow-xs">
+          <!-- Institutional Email Row -->
+          <div class="flex flex-col gap-4 border-b border-hairline pb-6 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-wider text-muted">Institutional Email</p>
+              <a
+                href="mailto:yzhang25@arizona.edu"
+                class="mt-1 block font-serif text-xl font-medium text-navy transition-colors hover:text-terracotta break-all"
+              >
+                yzhang25@arizona.edu
+              </a>
+            </div>
+            <button
+              type="button"
+              onclick="copyInstitutionalEmail(this)"
+              class="inline-flex w-fit items-center gap-2 rounded-lg border border-hairline bg-bandLight px-4 py-2.5 text-sm font-medium text-ink transition-colors hover:border-navy hover:text-navy"
+            >
+              <svg class="h-4 w-4 text-muted" fill="none" stroke="currentColor" stroke-width="1.75" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <span class="copy-label">Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Institutional Mailing Addresses -->
+          <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div>
+              <p class="font-mono text-xs uppercase tracking-wider text-terracotta">Department</p>
+              <p class="mt-1.5 font-serif text-base font-medium text-ink">
+                Department of East Asian Studies, University of Arizona
+              </p>
+              <address class="mt-1 not-italic text-sm leading-relaxed text-muted">
+                Learning Service Building, 102<br />
+                1512 E. First Street<br />
+                Tucson, AZ 85721-0105
+              </address>
+            </div>
+
+            <div>
+              <p class="font-mono text-xs uppercase tracking-wider text-terracotta">Research Archive</p>
+              <p class="mt-1.5 font-serif text-base font-medium text-ink">
+                Learning Games Initiative Research Archive (LGIRA)
+              </p>
+              <address class="mt-1 not-italic text-sm leading-relaxed text-muted">
+                Transitional Office Building, 3rd floor<br />
+                1731 East 2nd Street<br />
+                Tucson, AZ 85719
+              </address>
+            </div>
+          </div>
+
+          <!-- Academic Profiles Row -->
+          <div class="mt-7 flex flex-wrap items-center gap-3 border-t border-hairline pt-6">
+            <span class="font-mono text-xs uppercase tracking-wider text-muted mr-1">Academic Profiles:</span>
+            <a
+              href="https://scholar.google.com/citations?user=ifbXAXpPnh8C&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 rounded-lg border border-hairline bg-bandLight px-3.5 py-2 text-sm font-medium text-ink transition-colors hover:border-navy hover:text-navy"
+            >
+              Google Scholar
+            </a>
+            <a
+              href="https://orcid.org/0009-0000-7841-878X"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1.5 rounded-lg border border-hairline bg-bandLight px-3.5 py-2 text-sm font-medium text-ink transition-colors hover:border-navy hover:text-navy"
+            >
+              ORCID
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       7. DEEP NAVY FOOTER
+       ========================================================================== -->
+  <footer class="border-t border-white/10 bg-navyDark py-9 text-white/75">
+    <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-5 text-xs sm:flex-row sm:px-8">
+      <p>© 2026 Yanchen Zhang · Department of East Asian Studies, University of Arizona.</p>
+      <div class="flex flex-wrap items-center gap-5">
+        <a
+          href="https://scholar.google.com/citations?user=ifbXAXpPnh8C&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white/80 transition-colors hover:text-white"
+        >
+          Google Scholar
+        </a>
+        <a
+          href="https://orcid.org/0009-0000-7841-878X"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white/80 transition-colors hover:text-white"
+        >
+          ORCID
+        </a>
+        <a
+          href="assets/CV_Yanchen_Zhang.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white/80 transition-colors hover:text-white"
+        >
+          CV (PDF)
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       8. ACCESSIBLE LIGHTBOX MODAL (SELECTED ARCHIVAL & FIELDWORK MATERIALS)
+       ========================================================================== -->
+  <div
+    id="lightbox-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="lightbox-title"
+    class="hidden fixed inset-0 z-50 flex items-center justify-center bg-navyDark/85 p-4 sm:p-6 backdrop-blur-xs"
+    onclick="if (event.target === this) closeLightbox();"
+  >
+    <div class="relative flex max-h-[92vh] w-full max-w-3xl flex-col overflow-hidden rounded-xl border border-hairline bg-bandLight shadow-2xl">
+      <!-- Top Control Bar -->
+      <div class="flex items-center justify-between border-b border-hairline bg-cardLight px-5 py-3.5">
+        <div class="flex items-center gap-3">
+          <span id="lightbox-counter" class="font-mono text-xs text-terracotta">Plate 01 / 04</span>
+          <span
+            id="lightbox-badge"
+            class="hidden sm:inline-block rounded-md px-2 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider"
+          ></span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button
+            type="button"
+            onclick="navigateLightbox(-1)"
+            aria-label="Previous plate"
+            class="rounded-lg border border-hairline bg-bandLight px-3 py-1.5 text-xs font-medium text-ink transition-colors hover:border-navy hover:text-navy"
+          >
+            Prev
+          </button>
+          <button
+            type="button"
+            onclick="navigateLightbox(1)"
+            aria-label="Next plate"
+            class="rounded-lg border border-hairline bg-bandLight px-3 py-1.5 text-xs font-medium text-ink transition-colors hover:border-navy hover:text-navy"
+          >
+            Next
+          </button>
+          <button
+            type="button"
+            onclick="closeLightbox()"
+            aria-label="Close lightbox"
+            class="ml-1 rounded-lg border border-hairline bg-bandLight p-1.5 text-muted transition-colors hover:border-navy hover:text-ink"
+          >
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Full Uncropped Image Display Stage -->
+      <div class="relative flex min-h-[240px] flex-1 items-center justify-center overflow-hidden bg-[#EFECE6] p-4 sm:p-6">
+        <img
+          id="lightbox-img"
+          src=""
+          alt=""
+          class="hidden max-h-[56vh] w-auto max-w-full rounded-lg object-contain"
+        />
+        <div id="lightbox-fallback" class="hidden max-w-md py-10 text-center">
+          <p id="lightbox-fallback-eyebrow" class="font-mono text-xs uppercase tracking-widest text-terracotta"></p>
+          <p id="lightbox-fallback-file" class="mt-2 font-mono text-sm text-navy"></p>
+          <p class="mt-2 text-xs leading-relaxed text-muted">
+            Place this image inside your <code class="font-mono">assets/</code> directory to inspect the full uncropped photograph.
+          </p>
+        </div>
+      </div>
+
+      <!-- Full Title, Category Badge (mobile) & Provenance Caption -->
+      <div class="overflow-y-auto border-t border-hairline bg-cardLight p-5 sm:p-6">
+        <span
+          id="lightbox-badge-mobile"
+          class="sm:hidden mb-2 inline-block rounded-md px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider"
+        ></span>
+        <h3 id="lightbox-title" class="font-serif text-lg sm:text-xl font-medium text-ink"></h3>
+        <p id="lightbox-caption" class="mt-2 text-sm leading-relaxed text-muted"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CLIENT-SIDE INTERACTION SCRIPT
+       ========================================================================== -->
+  <script>
+    /**
+     * Track load state for portrait and archival/fieldwork plate images
+     * so fallback frames cleanly replace broken-image browser icons.
+     */
+    const imageLoadState = {
+      portrait: false,
+      'plate-0': false,
+      'plate-1': false,
+      'plate-2': false,
+      'plate-3': false,
+    };
+
+    /**
+     * Authoritative metadata for the 4-plate Selected Archival & Fieldwork Materials Lightbox.
+     */
+    const archivalPlates = [
+      {
+        key: 'plate-0',
+        type: 'archival',
+        badge: 'Archival Acquisition · LGIRA Collection',
+        src: 'assets/subor_sb486d.webp',
+        title: 'Subor (Xiaobawang) SB-486D “Chinese-English Computer Learning Machine” (1990s)',
+        caption:
+          'Original retail packaging featuring Jackie Chan alongside a Subor light gun and Famicom-compatible yellow cartridges—illustrating how domestic gaming hardware navigated parental anxieties through educational framing. Collected by Yanchen Zhang during his archival work for the Learning Games Initiative Research Archive (LGIRA); now housed in the LGIRA collection.',
+      },
+      {
+        key: 'plate-1',
+        type: 'archival',
+        badge: 'Archival Acquisition · LGIRA Collection',
+        src: 'assets/greendam_cdrom.webp',
+        title: 'Green Dam–Youth Escort (Lüba–Huaji Huhang) Installation CD-ROM (ASUS OEM, 2009)',
+        caption:
+          'Hardware-bundled installation disc distributed with ASUS personal computers during China’s 2009 Ministry of Industry and Information Technology (MIIT) content-filtering initiative, documenting state technological governance and anxieties over youth access to home PCs. Collected by Yanchen Zhang during his archival work for the Learning Games Initiative Research Archive (LGIRA); now housed in the LGIRA collection.',
+      },
+      {
+        key: 'plate-2',
+        type: 'fieldwork',
+        badge: 'Museum Fieldwork · Shanghai, 2026',
+        src: 'assets/gmc_living_room.webp',
+        title: 'Reconstructed 1990s Chinese Domestic Living Room',
+        caption:
+          'A Subor (Xiaobawang) keyboard-style learning machine and yellow cartridges sit before a CRT television beneath two school merit certificates (jiangzhuang), capturing the spatial coexistence of play and parental educational expectations. Exhibition display curated by the China Game Museum (Shanghai); fieldwork photograph by Yanchen Zhang, August 2026.',
+      },
+      {
+        key: 'plate-3',
+        type: 'fieldwork',
+        badge: 'Museum Fieldwork · Shanghai, 2026',
+        src: 'assets/gmc_computer_mall.webp',
+        title: 'Reconstructed Late-1990s–2000s Computer Mall (Diannaocheng) Game Retail Counter',
+        caption:
+          'Glass display cases advertising both budget genuine releases (“10-yuan genuine storm”) and custom CD-R burning services illustrate the hybrid commercial and informal circulation networks of PC gaming in urban China. Exhibition display curated by the China Game Museum (Shanghai); fieldwork photograph by Yanchen Zhang, August 2026.',
+      },
+    ];
+
+    let currentPlateIndex = 0;
+
+    /**
+     * Toggle image visibility cleanly when an asset loads or is absent.
+     */
+    function handleImageLoad(key) {
+      imageLoadState[key] = true;
+      const imgEl = document.getElementById('img-' + key);
+      const fallbackEl = document.getElementById('fallback-' + key);
+      if (imgEl) imgEl.classList.remove('hidden');
+      if (fallbackEl) fallbackEl.classList.add('hidden');
+    }
+
+    function handleImageError(key) {
+      imageLoadState[key] = false;
+      const imgEl = document.getElementById('img-' + key);
+      const fallbackEl = document.getElementById('fallback-' + key);
+      if (imgEl) imgEl.classList.add('hidden');
+      if (fallbackEl) fallbackEl.classList.remove('hidden');
+    }
+
+    /**
+     * Copy institutional email using iframe-safe execCommand with clipboard fallback,
+     * showing a brief inline confirmation label on the clicked button.
+     */
+    function copyInstitutionalEmail(buttonEl) {
+      const email = 'yzhang25@arizona.edu';
+      let copied = false;
+
+      try {
+        const helper = document.createElement('textarea');
+        helper.value = email;
+        helper.setAttribute('readonly', '');
+        helper.style.position = 'fixed';
+        helper.style.left = '-9999px';
+        document.body.appendChild(helper);
+        helper.select();
+        copied = document.execCommand('copy');
+        document.body.removeChild(helper);
+      } catch (err) {
+        copied = false;
+      }
+
+      if (!copied && navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).catch(() => {
+          // Silent fallback; institutional email remains readable in the contact card.
+        });
+      }
+
+      if (buttonEl) {
+        const labelEl = buttonEl.querySelector('.copy-label');
+        if (labelEl) {
+          if (!buttonEl.dataset.originalLabel) {
+            buttonEl.dataset.originalLabel = labelEl.textContent;
+          }
+          labelEl.textContent = 'Copied: yzhang25@arizona.edu';
+          buttonEl.classList.add('border-navy', 'text-navy');
+          clearTimeout(buttonEl._copyTimer);
+          buttonEl._copyTimer = setTimeout(() => {
+            labelEl.textContent = buttonEl.dataset.originalLabel;
+            buttonEl.classList.remove('border-navy', 'text-navy');
+          }, 2200);
+        }
+      }
+    }
+
+    /**
+     * Switch active unit tab inside the 15-Week Sample Syllabus Explorer.
+     */
+    function switchSyllabusUnit(unitId) {
+      const unitIds = ['unit1', 'unit2', 'unit3', 'unit4'];
+      unitIds.forEach((id) => {
+        const tab = document.getElementById('tab-' + id);
+        const panel = document.getElementById('panel-' + id);
+        if (!tab || !panel) return;
+
+        const isActive = id === unitId;
+        tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+
+        if (isActive) {
+          tab.className =
+            'unit-tab -mb-px border-b-2 border-navy pb-3 text-sm font-medium text-navy transition-colors';
+          panel.classList.remove('hidden');
+        } else {
+          tab.className =
+            'unit-tab -mb-px border-b-2 border-transparent pb-3 text-sm font-medium text-muted transition-colors hover:text-ink';
+          panel.classList.add('hidden');
+        }
+      });
+    }
+
+    /**
+     * Render the requested archival/fieldwork plate inside the accessible Lightbox modal.
+     */
+    function renderLightboxPlate(index) {
+      const plate = archivalPlates[index];
+      if (!plate) return;
+
+      const counterEl = document.getElementById('lightbox-counter');
+      const badgeEl = document.getElementById('lightbox-badge');
+      const badgeMobileEl = document.getElementById('lightbox-badge-mobile');
+      const titleEl = document.getElementById('lightbox-title');
+      const captionEl = document.getElementById('lightbox-caption');
+      const imgEl = document.getElementById('lightbox-img');
+      const fallbackEl = document.getElementById('lightbox-fallback');
+      const fallbackEyebrowEl = document.getElementById('lightbox-fallback-eyebrow');
+      const fallbackFileEl = document.getElementById('lightbox-fallback-file');
+
+      const badgeColorClass =
+        plate.type === 'archival'
+          ? 'bg-terracottaTint text-terracotta'
+          : 'bg-navyTint text-navy';
+
+      counterEl.textContent = `Plate 0${index + 1} / 0${archivalPlates.length}`;
+
+      badgeEl.textContent = plate.badge;
+      badgeEl.className = `hidden sm:inline-block rounded-md px-2 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider ${badgeColorClass}`;
+
+      badgeMobileEl.textContent = plate.badge;
+      badgeMobileEl.className = `sm:hidden mb-2 inline-block rounded-md px-2.5 py-0.5 font-mono text-[10.5px] font-medium uppercase tracking-wider ${badgeColorClass}`;
+
+      titleEl.textContent = plate.title;
+      captionEl.textContent = plate.caption;
+
+      if (imageLoadState[plate.key]) {
+        imgEl.src = plate.src;
+        imgEl.alt = plate.title;
+        imgEl.classList.remove('hidden');
+        fallbackEl.classList.add('hidden');
+      } else {
+        imgEl.classList.add('hidden');
+        fallbackEyebrowEl.textContent = `Plate 0${index + 1} · ${plate.badge}`;
+        fallbackFileEl.textContent = plate.src;
+        fallbackEl.classList.remove('hidden');
+      }
+    }
+
+    /**
+     * Open, navigate, and close the accessible Lightbox modal.
+     */
+    function openLightbox(index) {
+      currentPlateIndex = index;
+      renderLightboxPlate(currentPlateIndex);
+      document.getElementById('lightbox-modal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function navigateLightbox(step) {
+      currentPlateIndex = (currentPlateIndex + step + archivalPlates.length) % archivalPlates.length;
+      renderLightboxPlate(currentPlateIndex);
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox-modal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    /**
+     * Initialize image fallback checks, mobile navigation, dark-header scrollspy,
+     * and keyboard accessibility once the DOM is ready.
+     */
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Inspect images that may have already loaded or errored before DOMContentLoaded
+      Object.keys(imageLoadState).forEach((key) => {
+        const imgEl = document.getElementById('img-' + key);
+        if (imgEl && imgEl.complete) {
+          if (imgEl.naturalWidth > 0) {
+            handleImageLoad(key);
+          } else {
+            handleImageError(key);
+          }
+        }
+      });
+
+      // 2. Responsive Mobile Menu Toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const iconHamburger = document.getElementById('icon-hamburger');
+      const iconClose = document.getElementById('icon-close');
+
+      function setMobileNavOpen(isOpen) {
+        mobileMenu.classList.toggle('hidden', !isOpen);
+        iconHamburger.classList.toggle('hidden', isOpen);
+        iconClose.classList.toggle('hidden', !isOpen);
+        menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      }
+
+      if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+          setMobileNavOpen(mobileMenu.classList.contains('hidden'));
+        });
+      }
+
+      document.querySelectorAll('.mobile-nav-link').forEach((link) => {
+        link.addEventListener('click', () => setMobileNavOpen(false));
+      });
+
+      // 3. Active Navigation Underline Highlighting on Deep Navy Header via IntersectionObserver
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('main section[id]');
+
+      function highlightNav(activeId) {
+        navLinks.forEach((link) => {
+          const isMatch = link.getAttribute('data-nav') === activeId;
+          link.classList.toggle('text-white', isMatch);
+          link.classList.toggle('font-medium', isMatch);
+          link.classList.toggle('border-[#D96B6B]', isMatch);
+          link.classList.toggle('text-white/75', !isMatch);
+          link.classList.toggle('border-transparent', !isMatch);
+        });
+      }
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                highlightNav(entry.target.id);
+              }
+            });
+          },
+          { rootMargin: '-25% 0px -65% 0px', threshold: 0 }
+        );
+        sections.forEach((section) => observer.observe(section));
+      }
+      highlightNav('about');
+
+      // 4. Keyboard Support for Lightbox (Escape, Left/Right Arrows)
+      document.addEventListener('keydown', (event) => {
+        const modal = document.getElementById('lightbox-modal');
+        if (!modal || modal.classList.contains('hidden')) return;
+
+        if (event.key === 'Escape') {
+          closeLightbox();
+        } else if (event.key === 'ArrowRight') {
+          navigateLightbox(1);
+        } else if (event.key === 'ArrowLeft') {
+          navigateLightbox(-1);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
